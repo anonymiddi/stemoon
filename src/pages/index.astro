@@ -75,6 +75,9 @@ import { Image } from 'astro:assets';
 		margin: 2;
 		font-size: 1.4em;
 		padding: 20px;
+			@media (max-width: 600px) {
+				padding: 10px; 
+			}
 		background-color: #000000;
 		color: #bebebe;
 		letter-spacing: 0.2em;
@@ -166,8 +169,8 @@ import { Image } from 'astro:assets';
 		text-align: center;
 	}
 	.p5nsp {
-		padding-inline-start: 150px;
-		padding-inline-end: 70px;
+		padding-inline-start: 50px;
+		padding-inline-end: 20px;
 		margin-top: 0px;
 		font-family: Georgia;
 		color: #9ec7f0;
@@ -218,7 +221,7 @@ import { Image } from 'astro:assets';
 	.btn {
 		color: #f1f1f1;
 		text-align: center;
-		padding: 10px 20px;
+		padding: 10px;
 		font-size: 1.6em;
 		border-radius: 3px;
 		text-decoration: none;
@@ -233,7 +236,7 @@ import { Image } from 'astro:assets';
 		color: #f1f1f1;
 		font-size: 1.6em;
 		text-align: center;
-		padding: 10px 20px;
+		padding: 10px;
 		border-radius: 3px;
 		text-decoration: none;
 		transition: background-color 0.3s, color 0.3s;
