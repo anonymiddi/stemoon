@@ -208,7 +208,9 @@ const { title } = Astro.props;
 <style is:global>
     @media (max-width: 600px) {
         html {
-            zoom: 0.6;
+            transform: scale(0.6);
+            transform-origin: top left;
+            width: 167%;
         }
     }
 </style>
