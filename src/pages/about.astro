@@ -1,0 +1,274 @@
+---
+import Layout from "./layouts/layout.astro";
+import { Image } from 'astro:assets';
+---
+
+
+<Layout title="About">
+    	<main>
+			<section class="hero">
+				<Image src="/stemoonlogo_white.webp" alt="STEMoon Logo" width={60} height={60} />
+				<div class="text-content">
+					<a href="/" style="text-decoration: none;"><h1>STEM<span class="h1small">oon</span></h1></a>
+				</div>
+                <div class="leadingredirects">
+                    <a href="/start" class="btn">Start</a>
+                    <a href="/purpose" class="btn">Purpose</a>
+                </div> 
+			</section>
+		</main>
+        <br />
+        <p class="p6"><u><strong>About this project</strong></u></u></p>
+
+        <p class="p5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>T</strong>hrough the two years of my studying in the Egyptian STEM ecosystem, I have gone on a journey to collect all the necessary (and unnecessary) information into one compiled place; L.O. by L.O., concept by concept.<br />Essentially, I was making my very own study material from scratch.</p>
+        <p class="p5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I thought to myself – having put this much substanial work into it, I couldn't simply let it marinate on my laptop's hard drive. And organizing them into PDFs on Google drive links would add to the heaps of materials that are already available out there. The whole point was this: the study materials currently available are disconnected and disorganized, and that approach would not solve the problem.</p>
+        <p class="p5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So, I decided to make a website specifically for it. A website that is easily accessible, free, with no ads, and as organized as possible. I tried my best to maintain the credibility and readability of the content here; from citing sources, to maintaining consistency in information hierarchy, and even as far as including reviews by STEM school teachers.</p>
+        <p class="p5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I hope this project can be of help to students. I also hope that it can be a source of motivation for students to continue their own study without the struggle of "did I study enough...?"</p>
+        <br />
+        <main class="main2">
+            <section class="hero">
+                <Image src="/facepicture.webp" alt="Baraa's face" width={200} height={200} class="baraaimage"/>
+                <div class="p4">I am <strong>Baraa Ahmed</strong>; an <strong>Ismailia STEM S'27</strong> student. A big fan for a good study session along with a big bowl of mangoes 🥭.<br />
+                You can find me normally active on my socials: <u><a class="p4link" href="https://linkedin.com/in/baraa-maysara" target="_blank">Linkedin</a></u>; <u><a class="p4link" href="https://instagram.com/b.ar4a" target="_blank">Instagram</a></u>, and <u><a class="p4link" href="#" onclick="window.alert('Discord:  .gang_'); return false;">Discord</a></u>. <br /> For any formal inquiry, you can reach out to me on my email: <a class="p4link" href="mailto:placeholder@placeholder.com" target="_blank">placeholder@placeholder.com</a>
+                </div>
+            </section>
+        </main>
+    <hr />
+</Layout>
+
+
+
+<style>
+	
+	@font-face {
+		font-family: 'Planet Kosmos';
+		src: url('/fonts/PLANK___.woff2') format('woff2');
+    }
+    .baraaimage
+    {
+        border-radius: 20px;
+    }
+    .leadingredirects {
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        @media (max-width: 950px) {
+            flex-direction: column;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+	main {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-left: 0;
+    }
+    .main2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 950px;
+		margin: 0 auto;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		font-family: 'Planet Kosmos';
+		margin: 2;
+		font-size: 1.4em;
+		padding: 20px;
+		background-color: #000000;
+		color: #bebebe;
+		letter-spacing: 0.2em;
+	}
+	.hero {
+		display: flex;
+		align-items: center;
+		min-height: 10vh;
+        width: 100%;
+		@media (max-width: 950px) {
+			flex-direction: column;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+    .hero2 {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		min-height: 10vh;
+		@media (max-width: 950px) {
+			flex-direction: column;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+	h1 {
+		color: #e1e5e8;
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+
+	.h1small {
+		color: #e1e5e8;
+		font-size: 0.8em;
+        text-decoration: none;
+	}
+
+	p {
+		color: #e1e5e8;
+		font-size: 1em;
+		letter-spacing: 0.1em;
+	}
+	.p2 {
+		position: fixed;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-family: Georgia;
+		color: #d2f1ff;
+		font-size: 0.8em;
+		font-style: italic;
+		letter-spacing: -0.01em;
+		text-align: center;
+	}
+	.p3 {
+		margin-top: 150px;
+		font-family: Georgia;
+		color: #596ee8;
+		font-size: 2em;
+		font-style: italic;
+		letter-spacing: -0.01em;
+		text-align: left;
+	}
+	.p4 {
+        max-width: 70%;
+		font-family: Georgia;
+		color: #4fa7ff;
+		font-size: 1.1em;
+		font-style: italic;
+		letter-spacing: -0.01em;
+		text-align: left;
+        margin: 0 auto;
+	}
+    	.p4link {
+		margin-top: 20px;
+        max-width: 70%;
+		font-family: Georgia;
+		color: #8fbce9;
+        text-decoration: none;
+		font-size: 1.1em;
+		font-style: italic;
+		letter-spacing: -0.01em;
+		text-align: left;
+        margin: 0 auto;
+	}
+	.p5 {
+		margin-top: 20px;
+        max-width: 70%;
+		font-family: Georgia;
+		color: #a0c8f0;
+		font-size: 1em;
+		font-style: italic;
+		letter-spacing: -0.01em;
+		text-align: left;
+        margin: 0 auto;
+	}
+	.p6 {
+		margin-top: 35px;
+		font-family: Georgia;
+		color: #9693df;
+		font-size: 1.4em;
+		font-style: italic;
+		letter-spacing: -0.01em;
+		text-align: center;
+	}
+	.p7 {
+
+		font-family: Georgia;
+		color: #ffffff;
+		font-size: 0.7em;
+		font-style: italic;
+		letter-spacing: -0.01em;
+		text-align: center;
+	}
+	.p5nsp {
+		margin-top: 0px;
+		font-family: Georgia;
+		color: #9ec7f0;
+		font-size: 1.2em;
+		font-style: italic;
+		letter-spacing: -0.01em;
+		text-align: left;
+	}
+	.highlight {
+		color: #675fff;
+	}
+	.highlight2 {
+		color: #ffea9f;
+	}
+	.smalltext {
+		color: #9ec7f0;
+		display: block;
+		font-size: 0.7em;
+		margin-top: 5px;
+		line-height: 1em;
+	}
+	hr {
+		width: 100%;
+	}
+	.bgmoon {
+		position: fixed;
+		left: -300px;
+		top: 50%;
+		min-width: 760px;
+		transform: translateY(-50%);
+		opacity: 0.2;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+	}
+	.buttons {
+		display: flex;
+		gap: 20px;
+		margin-top: 30px;
+		justify-content: center;
+	}
+	.btn {
+		color: #f1f1f1;
+		text-align: center;
+		padding: 10px 20px;
+		border-radius: 3px;
+		text-decoration: none;
+		transition: background-color 0.3s, color 0.3s;
+	}
+	.btn:hover {
+		color: #675fff;
+		transition: transform 0.3s;
+		transform: scale(.95);
+	}
+	.btn2 {
+		color: #f1f1f1;
+		font-size: 1.6em;
+		text-align: center;
+		padding: 10px 20px;
+		border-radius: 3px;
+		text-decoration: none;
+		transition: background-color 0.3s, color 0.3s;
+	}
+	.btn2:hover {
+		background-color: #a47c2c;
+		transition: transform 0.3s;
+		transform: scale(.95);
+	}
+	.previouslyblackbglmao {
+		width: 100%;
+		margin-left: -30px;
+		padding-left: 30px;
+		padding-right: 30px;
+		min-height: 30vh;
+	}
+</style>
